@@ -4,7 +4,7 @@
     --black:rgb(31, 29, 29); 
     --orange:rgb(255, 94, 0);
     --color-primary:#eb790e;
-    --color-sec:#c56900;
+    --color-sec:#d67608;
     --color-gray:rgb(99, 94, 94);
     --color-dark-gray:rgb(44, 42, 42);
 }
@@ -119,3 +119,15 @@ img {
     background-color: var(--color-primary);
     color: var(--white);
 }
+
+.btn:active {
+    background-color: var(--color-sec);
+}
+
+#score {
+    color: var(--black);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
