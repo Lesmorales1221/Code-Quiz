@@ -96,3 +96,7 @@ img {
     border-width: 1px 0;
     padding: 5px 0;
 }
+
+.buttons {
+    margin: 1.5rem 0 4rem 0;
+}
