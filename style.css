@@ -88,3 +88,9 @@ img {
     border-radius: 3px;
 }
 
+.quiz-box #question {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--orange);
+    border: 1px solid #777;
+}
