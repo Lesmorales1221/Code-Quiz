@@ -48,5 +48,17 @@ function displayQuestion() {
         choiceElement.innerHTML = choices[i];
         guess("btn" + i, choices[i]);
     }
-}
-}
+
+    showProgress(); 
+ }
+
+};
+
+//Guess answer
+function guess(id,guess) {
+    let button = document.getElementById(id);
+    button.onclick = function() {
+        quiz.guess(guess);
+        displayQuestion();
+    }
+};
