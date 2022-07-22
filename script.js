@@ -21,3 +21,32 @@ class Quiz {
         return this.questionIndex === this.questions.length;
     }
 }
+
+//question Class
+class Question {
+    constructor(text,choices, answer) {
+        this.text = text;
+        this.choices = choices;
+        this.answer = answer
+    }
+    isCorrectAnswer(choice) {
+        return this.answer === choice;
+    }
+}
+
+//Display questions
+function displayQuestion() {
+    if (Quiz.isEnded()) {
+        showScores();
+    } else {
+    let questionElement = document.getElementById("question");
+    questionElement.innerHTML = quiz.getQuestionIndex().text;
+
+    let choices = quiz.getQuestionIndex().choices;
+    for (let i=0; i < choices.lenght; i++) {
+        let choiceElement = document.getElementById("choice" + i);
+        choiceElement.innerHTML = choices[i];
+        guess("btn" + i, choices[i]);
+    }
+}
+}
