@@ -65,3 +65,8 @@ img {
     margin-bottom: 2rem; 
     border-radius: 3px;
 }
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+}
