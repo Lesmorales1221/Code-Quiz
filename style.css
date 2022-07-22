@@ -131,3 +131,14 @@ img {
     margin-bottom: 4rem;
 }
 
+.quiz-repeat {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    background-color: var(--orange);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
