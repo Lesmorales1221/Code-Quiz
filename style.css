@@ -2,6 +2,7 @@
 :root {
     --white:rgb(241, 233, 227);
     --black:rgb(31, 29, 29); 
+    --orange:orange;
     --color-primary:#eb790e;
     --color-sec:#c56900;
     --color-gray:rgb(78, 74, 74);
@@ -19,5 +20,19 @@ html {
 }
 
 body {
+    font-family: 'Rubik',sans-serif;
+    background-color: var(--color-dark-gray);
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
     
 }
