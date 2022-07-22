@@ -62,3 +62,12 @@ function guess(id,guess) {
         displayQuestion();
     }
 };
+
+// Progress of the quiz
+function showProgress() {
+    let currentQuestionNumber = quiz.questionIndex + 1;
+    let ProgressElement = document.getElementById("progress");
+    ProgressElement.innerHTML = 
+    'Question ${currentQuestionNumber} of ${quiz.Question.length}';
+
+}
