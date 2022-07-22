@@ -71,3 +71,9 @@ function showProgress() {
     'Question ${currentQuestionNumber} of ${quiz.Question.length}';
 
 }
+
+//show the scores
+function showScores() {
+    let quizEndHTML = document.getElementById("quiz");
+    quizElement.innerHTML = quizEndHTML;
+};
