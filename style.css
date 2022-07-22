@@ -69,4 +69,11 @@ img {
 .quiz-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-header #progress {
+    color: var(--color-dark-gray);
+    font-size: 1.6rem;
+    font-weight: 70;
 }
