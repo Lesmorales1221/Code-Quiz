@@ -77,3 +77,32 @@ function showScores() {
     let quizEndHTML = document.getElementById("quiz");
     quizElement.innerHTML = quizEndHTML;
 };
+
+// The quiz questions =>
+let questions =[
+    new Question(
+        "Which is not a various formatting tags in HTML?",
+        ["<b>", "<em>", "<strong>", "<h1>"], "<h1>"
+    ),
+    new Question(
+        "What are the elements of the CSS Box Model?",
+        ["margins, border, color, padding", "borders, sizing, margins, content", "margins, border, padding, content", "borders, content, font, margins"], "margins, borders, padding, content"
+    ),
+    new Question(
+        "Which of these answers does NOT describe what an HTML element is",
+        ["HTML Elements hold the content", "They specify the general content", "An example of an element is <a></a>", "The element is an individual component of the HTML web page or document that consists of a start tag, its attributes, an end tag, and everything in between. "], "An example of an element is <a></a>"
+    ),
+    new Question(
+        "What are the uses of an embedded style sheet?"
+        ["Embedded style sheet gives us the privilege to define styles in one place in an HTML document.", "Embedded style sheet is a link to images.", "Embedded style sheet is a rank that decides which style declaration has to be used to an element.", "Embedded style sheet is a property of css which allows you to display a smooth transformation between 2 or more specified colors"],"Embedded style sheet gives us the privilege to define styles in one place in an HTML document."
+    ), 
+    new Question(
+        "Which HTML tag does not comein a pair?"
+        ["<br>", "<h1>", "<div>","<span>" ], "<br>"
+    )
+];
+
+let quiz = new quiz(questions);
+
+//display the question
+displayQuestion();
